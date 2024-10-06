@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>个人简历作品集</title>
+		<style>
+			/* 定义缩放动画 */
+			@keyframes scale-up {
+			  50% {
+			    transform: scale(1.5); /* 在动画的50%时，放大到1.5倍 */
+			  }
+			  100% {
+			    transform: scale(1); /* 在动画的100%时，变回原来大小 */
+			  }
+			}
+			/* 应用动画到图片 */
+			.img-scale-up {
+			  width: 100%; /* 或者设置为你想要的宽度 */
+			  transition: transform 0.5s ease; /* 平滑的转换效果 */
+			  animation: scale-up 2s linear 1s 2; /* 动画持续2秒，循环2次 */
+			  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+			}
+			
+			
+			
+		</style>
+	</head>
+	<body>
+		<img src="static/bg1.png" alt="可缩放的图片" class="img-scale-up" onclick="window.location.href='MySecond.html';">
+	</body>
+</html>
